@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            border: 1px solid black;
+        }
+
+        .static {
+            position: static;
+            /*quando il position è static:le cordinate top e left si annullano*/
+            top: 200px;
+            left: 400px;
+        }
+
+        .absolut {
+            position: absolute;
+            top: 110px;
+            left: 500px;
+            background: yellow;
+        }
+        .relative{
+            position: relative;
+            top: 110px;
+            left: 200px;
+            background: rgb(183, 77, 77);
+        }
+        .fixed{
+            position: fixed;
+            top: 50px;
+            left: 500px;
+            background-color: beige;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fixed">
+
+    </div>
+    <div class="static">
+        <p>div1</p>
+    </div>
+    <div class="absolut">
+        <p>div2</p>
+    </div>
+    <div class="relative">
+<p> div3</p>
+    </div>
+</body>
+
+</html>
