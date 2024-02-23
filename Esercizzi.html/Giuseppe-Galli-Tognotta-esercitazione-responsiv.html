@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(../img/moroccan-flower.png);
+            font-size: 16px;
+        }
+
+        div {
+            border: 1px solid rgb(0, 0, 0);
+            text-align: justify;
+            font-family: sans-serif;
+        }
+
+        .row {
+            display: flex;
+            width: 80%;
+            margin-left: 10%;
+            background-color: rgb(255, 255, 255);
+            height: 500px;
+        }
+
+        .Top-div-destro {
+            width: 60%;
+            font-size: 0.8em;
+
+        }
+
+        .Top-div-sinistro {
+            width: 40%;
+            font-size: 0.8em;
+        }
+
+        .row1 {
+            display: flex;
+            width: 80%;
+            margin-left: 10%;
+            background-color: rgb(255, 255, 255);
+            height: 500px;
+        }
+
+        .Bottom-div-destro {
+            width: 70%;
+            font-size: 0.8em;
+        }
+
+        .Bottom-div-centrale {
+            width: 30%;
+            font-size: 0.8em;
+        }
+
+        .Bottom-div-sinistro {
+            width: 0%;
+            font-size: 0.8em;
+        }
+       
+        @media screen and (max-width:1400px) {
+            body {
+                background-image: url(../img/moroccan-flower.png);
+                font-size: 16px;
+            }
+
+            .Top-div-destro {
+                width: 50%;
+                font-size: 0.6em;
+                padding: 0%;
+
+            }
+
+            .Top-div-sinistro {
+                width: 50%;
+                font-size: 0.8em;
+            }
+
+            .Bottom-div-destro {
+                width: 60%;
+                font-size: 0.8em;
+                display: none;
+            }
+
+            .Bottom-div-centrale {
+                width: 40%;
+                font-size: 0.8em;
+                display: none;
+            }
+
+            .Bottom-div-sinistro {
+                width: 100%;
+                font-size: 0.8em;
+
+            }
+
+            @media screen and (max-width:540px) {
+                body {
+                    background-image: url(../img/moroccan-flower.png);
+                    font-size: 16px;
+                }
+
+                .Top-div-destro {
+                    width: 100%;
+                    font-size: 0.7em;
+
+                }
+
+                .Top-div-sinistro {
+                    width: 50%;
+                    font-size: 0.8em;
+                    display: none;
+                }
+
+                .Bottom-div-destro {
+                    width: 60%;
+                    font-size: 0.8em;
+                    display: none;
+                }
+
+                .Bottom-div-centrale {
+                    width: 40%;
+                    font-size: 0.8em;
+                    display: none;
+                }
+
+                .Bottom-div-sinistro {
+                    width: 100%;
+                    font-size: 0.8em;
+
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="Top-div-destro">
+            <p>The above example creates three equal-width columns on small, medium, large, and extra large devices
+                using our predefined grid classes. Those columns are centered in the page with the parent .container.
+
+                Breaking it down, here’s how it works:
+
+                Containers provide a means to center and horizontally pad your site’s contents. Use .container for a
+                responsive pixel width or .container-fluid for width: 100% across all viewport and device sizes.
+                Rows are wrappers for columns. Each column has horizontal padding (called a gutter) for controlling the
+                space between them. This padding is then counteracted on the rows with negative margins. This way, all
+                the content in your columns is visually aligned down the left side.
+                In a grid layout, content must be placed within columns and only columns may be immediate children of
+                rows.
+                Thanks to flexbox, grid columns without a specified width will automatically layout as equal width
+                columns. For example, four instances of .col-sm will each automatically be 25% wide from the small
+                breakpoint and up. See the auto-layout columns section for more examples.
+                Column classes indicate the number of columns you’d like to use out of the possible 12 per row. So, if
+                you want three equal-width columns across, you can use .col-4.
+                Column widths are set in percentages, so they’re always fluid and sized relative to their parent
+                element.
+                Columns have horizontal padding to create the gutters between individual columns, however, you can
+                remove the margin from rows and padding from columns with .no-gutters on the .row.
+                To make the grid responsive, there are five grid breakpoints, one for each responsive breakpoint: all
+                breakpoints (extra small), small, medium, large, and extra large.
+                Grid breakpoints are based on minimum width media queries, meaning they apply to that one breakpoint and
+                all those above it (e.g., .col-sm-4 applies to small, medium, large, and extra large devices, but not
+                the first xs breakpoint).
+                You can use predefined grid classes (like .col-4) or Sass mixins for more semantic markup.</p>
+        </div>
+        <div class="Top-div-sinistro">
+            <ul type="circle">
+        
+                <li>giuseppe</li> <!--list item-->
+                <li>michelangelo</li>
+                <li>andrea</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row1">
+        <div class="Bottom-div-destro">
+            <form action="destinazione" method="post"> <!-- form action reinderizza i dati mandati dal botton dove indichiamo-->
+                <!--method per nascondere la querystring-->
+                <label> nome </label> <!-- label serve per attribuire un titolo-->
+                <input type="text" placeholder="inserisci nome:" name="nome"> <!--type serve per indicare il tipo di variabile tra le virgolette-->
+                <!--placeholder suggerimento da dare all'utente-->
+                <!--name serve ad aggiungere un campo nella querystring-->
+                <br> <br>
+                <label> cognome </label>
+                <input type="text" placeholder="inserisci cognome:" name="cognome">
+                <br> <br> <!--br serve per bloccare gli elementi inline e mandare a capo -->
+                <label> username </label>
+                <input type="text" placeholder="inserisci username:" name="username"> 
+                <br> <br>
+                <label> password </label>
+                <input type="password" placeholder="inserisci password:" name="password"> <!--se nel type metti password si cripta cio che scrivi-->
+                <br> <br>
+                <button type="submit"><!--ti crea il bottone da premere collegato al form -->
+                    registrati
+                </button>
+                <button type="reset"><!--ti resetta i parametri-->
+                    resetta
+                </button>
+        </div>
+        <div class="Bottom-div-centrale">
+            <img src="../img/triangolini.png" width="100%" height="100%">
+        </div>
+        <div class="Bottom-div-sinistro" >
+        </div>
+    </div>
+</body>
+
+</html>
