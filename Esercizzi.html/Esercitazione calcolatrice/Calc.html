@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolatrice</title>
+</head>
+
+<body>
+    <form>
+        <input id="input" placeholder="Inserisci primo numero">
+        <input id="input" placeholder="inserisci secondo numero">
+        <button onclick="cliccaBottoneAnagrafica()">+</button>
+        <button onclick="cliccaBottoneAnagrafica2()">-</button>
+        <button onclick="cliccaBottoneAnagrafica3()">*</button>
+        <button onclick="cliccaBottoneAnagrafica4()">/</button>
+    </form>
+    <script>
+        function cliccaBottoneAnagrafica() {
+            var numeri = document.getElementsByTagName("input");
+            var num1 = parseInt(numeri[0].value);
+            var num2 = parseInt(numeri[1].value);
+            alert("somma: "+(num1+num2));
+        }
+
+        function cliccaBottoneAnagrafica2() {
+            var numeri = document.getElementsByTagName("input");
+            var num1 = parseInt(numeri[0].value);
+            var num2 = parseInt(numeri[1].value);
+            alert("sottrazione: "+(num1-num2));
+        }
+        function cliccaBottoneAnagrafica3() {
+            var numeri = document.getElementsByTagName("input");
+            var num1 = parseInt(numeri[0].value);
+            var num2 = parseInt(numeri[1].value);
+            alert("moltiplicazione: "+(num1*num2));
+        }
+        function cliccaBottoneAnagrafica4() {
+            var numeri = document.getElementsByTagName("input");
+            var num1 = parseInt(numeri[0].value);
+            var num2 = parseInt(numeri[1].value);
+            alert("divisione: "+(num1/num2));
+        }
+    </script>
+</body>
+
+</html>
