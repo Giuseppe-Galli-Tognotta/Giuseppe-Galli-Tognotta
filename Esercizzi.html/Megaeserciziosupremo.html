@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<style>
+    body {
+        margin: 0px;
+    }
+
+    ul {
+        background-color: #37ABE6;
+        height: 50px;
+        margin: 0px;
+        padding: 1px;
+        text-align: center;
+    }
+
+    a {
+        color: beige;
+        font-size: 30px;
+        margin-top: 0px;
+
+    }
+
+    li {
+        display: inline;
+        margin: 13%;
+
+    }
+
+    input {
+        padding: 3%;
+        margin-left: 30%;
+    }
+
+    .cont {
+        background-color: #37ABE6;
+        width: 30%;
+        height: 200px;
+        margin-top: 0%;
+        margin-left: 37%;
+        border-radius: 20%
+    }
+
+    .cont1 {
+        height: 450px;
+        display: flex;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 5%;
+
+    }
+
+    .divfoto {
+        width: 30%;
+        background-color: #3774E6;
+        border: 1px solid black;
+    }
+
+    .divideo {
+        width: 70%;
+        background-color: #3774E6;
+        border: 1px solid black;
+    }
+</style>
+<nav>
+    <ul>
+        <li><a href="">chi siamo</a></li>
+        <li><a href="">dove siamo</a></li>
+        <li><a href="">contatti</a></li>
+    </ul>
+</nav>
+
+<body id="body">
+    <div id="divON" style="height: 50px;width: 50px; background-color: #37e2e6;"></div>
+    <div id="divOF" style="height: 50px;width: 50px; background-color: #3774E6;"></div>
+    <div class="cont">
+        <input style="margin-top: 8%;" id="Codice-Fiscale" type="text" placeholder="Codice Fiscale:">
+        <small id="sm-cf"></small>
+        <input id="email" type="text" placeholder="Email:">
+        <small id="sm-email"></small>
+        <button style="display: block;margin-left: 30%;" type="submit" onclick="bottoneDiInvio()">clicca</button>
+    </div>
+    <div class="cont1">
+        <!--Div figlio1-->
+        <div class="divfoto" style="background-color:#3774E6;">
+            <img src="../img/nap (2).webp">
+        </div>
+        <!--Div figlio2-->
+        <div class="divideo" style="background-color: #3774E6; ">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/OozRAhJ42yM?si=zT-ngjZb9zb7cnd-"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+        <script>
+            document.getElementById("divON").onclick = function () {
+                document.getElementById("divOF").style.backgroundColor = "#6A37E6";
+                document.getElementById("divON").style.backgroundColor = "#37E2E6";
+                document.getElementById("body").style.backgroundColor = "#373DE6"
+            }
+            document.getElementById("divOF").onclick = function () {
+                document.getElementById("divOF").style.backgroundColor = "beige";
+                document.getElementById("divON").style.backgroundColor = "#3A37E6";
+                document.getElementById("body").style.backgroundColor = "white"
+            }
+        </script>
+</body>
+
+</html>
