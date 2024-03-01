@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            display: block;
+            /*converto elementi inline in block-level*/
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <input id="nome" type="text" placeholder="Nome: ">
+        <small id="sm-nome"></small><br><br>
+        <input id="cognome" type="text" placeholder="Cognome: ">
+        <small id="sm-cognome"></small><br><br>
+        <button type="button" onclick="sottoscrizione()">Bottone</button>
+        <button type="button" onclick="resetCampi()">Reset</button>
+    </form>
+
+
+    <script>
+
+        function sottoscrizione() {
+            var campi = document.getElementsByTagName("input");
+            var nome = campi[0].value;
+            var cognome = campi[1].value;
+            var regex = /^[a-zA-Z]{2,}$/g;
+            if (!nome.match(regex)) {
+                document.getElementById("nome").style.backgroundColor = "red";
+                document.getElementById("sm-nome").innerHTML = "Nome non corretto!!!";
+            }
+            if (!cognome.match(regex)) {
+                document.getElementById("cognome").style.backgroundColor = "red";
+                document.getElementById("sm-cognome").innerHTML = "Nome non corretto!!!";
+            }
+            /*sottoscrizione*/
+            if(flag){
+                document.getElementById("form").action = "destinazione";
+                document.getElementById("form").submit();
+            }
+        }
+
+        /*Ritorno alle impostazioni di default*/
+        function resetCampi(){
+            document.getElementById("nome").style.backgroundColor = "white";
+            document.getElementById("sm-nome").innerHTML = "";
+            document.getElementById("cognome").style.backgroundColor = "white";
+            document.getElementById("sm-cognome").innerHTML = "";
+        }
+
+        document.getElementById("nome").onclick = function () { /*fun anonima*/
+            document.getElementById("nome").style.backgroundColor = "white";
+            document.getElementById("sm-nome").innerHTML = "";
+        }
+
+        document.getElementById("cognome").onclick = function () {
+            document.getElementById("cognome").style.backgroundColor = "white";
+            document.getElementById("sm-cognome").innerHTML = "";
+        }
+
+    </script>
+</body>
+
+</html>

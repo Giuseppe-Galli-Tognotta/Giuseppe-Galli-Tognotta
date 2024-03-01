@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+</body>
+<button onclick="cliccaBotttone()">clicca</button>
+<br><br>
+<form>
+    <input id="mioInput">
+    <button onclick="cliccaBottoneForm()">clicca</button>
+</form>
+<br><br>
+<form>
+    <input id="nome" placeholder="nome">
+    <input id="cognome" placeholder="cognome">
+    <input id="citta" placeholder="citta">
+    <button onclick="cliccaBottoneAnagrafica()">clicca</button>
+</form>
+<br><br>
+<form>
+    <input id="nome" class="mioInput" placeholder="nome">
+    <input id="cognome" class="mioInput" placeholder="cognome">
+    <input id="citta" class="mioInput" placeholder="citta">
+    <button onclick="cliccaBottoneAnagrafica2()">clicca</button>
+</form>
+<script>
+    function cliccaBotttone() {
+        alert("ciao a tutti")
+    }
+    function cliccaBottoneForm() {
+        var input = document.getElementById("mioInput").value;
+        alert(input)
+    }
+    function cliccaBottoneAnagrafica() {
+        var campi = document.getElementsByTagName("input");
+        var nome =campi[1].value;
+        var cognome =campi[2].value;
+        var citta =campi[3].value;
+        alert("salutiamo " +nome+" "+cognome+" da "+citta);
+    }
+    function cliccaBottoneAnagrafica2(){
+        var campi=document.getElementsByClassName("mioInput");
+        var nome =campi[0].value;
+        var cognome =campi[1].value;
+        var citta =campi[2].value;
+        alert("salutiamo " +nome+" "+cognome+" da "+citta);
+    }
+</script>
+</body>
+
+</html>

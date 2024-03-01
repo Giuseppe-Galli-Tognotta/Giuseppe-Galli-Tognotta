@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+</style>
+
+<body>
+    <canvas id="myCanvas" width="600px" height="300px" style="border: 1px solid blue;">
+        Browser non idoneo a leggere il canvas
+    </canvas>
+    <select>
+        <option value="Linea">Linea</option>
+        <option value="Triangolo">Triangolo</option>
+        <option value="Quadrato">Quadrato</option>
+        <option value="Trapezio">Trapezio</option>
+        <option value="Cerchio">Cerchio</option>
+    </select>
+    <br><br>
+    <form action="">
+        <div>
+            1° Punto (X,Y)<input type="text" id="x1" placeholder="punto 1°">
+            <input type="text" id="y1" placeholder="punto 2°">
+            <br><br>
+        </div>
+        <div>
+            2° Punto (X,Y)<input type="text" id="x2" placeholder="punto 1°">
+            <input type="text" id="y2" placeholder="punto 2°">
+            <br><br>
+        </div>
+        <div></div>
+        3° Punto (X,Y)<input type="text" id="x3" placeholder="punto 1°">
+        <input type="text" id="y3" placeholder="punto 2°">
+        <br><br>
+        </div>
+        <div>
+            4° Punto (X,Y)<input type="text" id="x4" placeholder="punto 1°">
+            <input type="text" id="y4" placeholder="punto 2°">
+        </div>
+    </form>
+    <button type="button" onclick="disegna()">Disegna</button>
+    <button type="button" onclick="pulisci()">Clear</button>
+    <script>
+        document.getElementById("select").onchange = function () {
+        var input= document.getElementById("select").value;
+        var select=input;
+        
+        }
+    </script>
+</body>
+
+</html>

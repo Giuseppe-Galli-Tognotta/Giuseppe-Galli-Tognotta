@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en"> <!--tag di root - Tag di inizializzazione-->
+
+<head> <!--head rappresenta il modulo di configuazione-->
+    <meta charset="UTF-8"><!--serve per far riconoscere determinati caratteri dell'alfabeto al browser-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina testò</title>
+    
+</head>
+
+<body> <!--body rappresenta il modulo della parte visibile all'utente-->
+    <!--HTML: Hyper Text Languagie - linguaggio di marcatura-->
+  
+    <a href="tabella.html">vai alla tabella</a>
+    <br><br>
+    <a href="elenchi.html"> vai agli elenchi</a>
+    <h1>Titolo esercitazione</h1> <!--h1 sta per header-->
+    <p><!--paragrafo-->
+        Qui ci scrivi quello che tu vuoi
+    </p>
+
+    <!--Form-Maschera di Input-->
+    <form action="destinazione" method="post"> <!-- form action reinderizza i dati mandati dal botton dove indichiamo-->
+        <!--method per nascondere la querystring-->
+        <label> nome </label> <!-- label serve per attribuire un titolo-->
+        <input type="text" placeholder="inserisci nome:" name="nome"> <!--type serve per indicare il tipo di variabile tra le virgolette-->
+        <!--placeholder suggerimento da dare all'utente-->
+        <!--name serve ad aggiungere un campo nella querystring-->
+        <br> <br>
+        <label> cognome </label>
+        <input type="text" placeholder="inserisci cognome:" name="cognome">
+        <br> <br> <!--br serve per bloccare gli elementi inline e mandare a capo -->
+        <label> username </label>
+        <input type="text" placeholder="inserisci username:" name="username"> 
+        <br> <br>
+        <label> password </label>
+        <input type="password" placeholder="inserisci password:" name="password"> <!--se nel type metti password si cripta cio che scrivi-->
+        <br> <br>
+        <input type="date"  name="data"> <!--se nel type metti data ti crea un calendario-->
+        <input type="radio" name="genere" value="M"><!--radio button per aggiungere un bottone-->
+        <input type="radio" name="genere" value="F">
+        <input type="radio" name="genere" value="A">
+        <select name="sesso">  <!--select per creare un menu a tendina-->
+            <option value="M"> maschio</option>
+            <option value="F"> femmina</option>
+            <option value="A"> altro</option>
+        </select>
+        <button type="submit"><!--ti crea il bottone da premere collegato al form -->
+            registrati
+        </button>
+        <button type="reset"><!--ti resetta i parametri-->
+            resetta
+        </button>
+    </form>
+
+</body>
+
+</html>

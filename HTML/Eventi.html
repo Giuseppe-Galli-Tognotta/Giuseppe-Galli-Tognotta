@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="body">
+    <div id="mioDiv" style="width: 50px;height: 50px;background-color: rgb(255, 255, 255);">ON</div>
+    <div id="mioDiv2" style="width: 50px;height: 50px;background-color: rgba(255, 0, 0, 0.763);">OFF</div>
+    <input id="input">
+    <ul>
+        <li>10</li>
+        <li>15</li>
+        <li>20</li>
+    </ul>
+    <button onclick="somma()"></button>
+    <script>
+        document.getElementById("input").onchange = function () {
+            var fiscal_cod = document.getElementById("input");
+            fiscal_cod.value = fiscal_cod.value.toUpperCase();
+        }
+        document.getElementById("mioDiv").onmouseover = function () {
+            document.getElementById("mioDiv2").style.backgroundColor = "red"
+            document.getElementById("mioDiv").style.backgroundColor = "white"
+            document.getElementById("body").style.background = "yellow"
+        }
+        document.getElementById("mioDiv2").onmouseover = function () {
+            document.getElementById("mioDiv").style.backgroundColor = "white"
+            document.getElementById("mioDiv2").style.backgroundColor = "red"
+            document.getElementById("body").style.background = "beige"
+        }
+        function somma(){
+            var numeri = document.getElementsByTagName("li");
+            var num1 = parseInt(numeri[0].innerHTML);
+            var num2 = parseInt(numeri[1].innerHTML);
+            var num3 = parseInt(numeri[2].innerHTML);
+            alert("somma: "+(num1+num2+num3));
+        }
+    </script>
+</body>
+
+</html>
