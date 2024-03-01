@@ -1,0 +1,69 @@
+
+#nome {
+    width: 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid black;
+    
+}
+
+#cognome {
+    width: 110px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid black;
+}
+#Cf {
+    width: 180px;
+    margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid black;
+}
+#CAP{
+    width: 60px;
+    margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid black;
+}
+#indirizzo{
+    width: 280px;
+    margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid black;
+}
+#civico {
+    width: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid black;
+}
+#email{
+    width: 380px;
+    margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid black;
+}
+body {
+    margin: 3%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 27%;
+    background-color: aquamarine;
+}
+#cont-Form {
+    border: 3px solid rgb(0, 0, 0);
+    width: 800px;
+    height: 500px;
+    background-color: rgba(114, 236, 255, 0.928);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+button{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 3px solid black;
+    margin-bottom: 1%;
+    padding: 1%;
+    background-color: cadetblue;
+}
+#Appari{
+    margin-left: 23%;
+}
+p{
+    font-size: 20px;
+}
